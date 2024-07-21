@@ -63,6 +63,12 @@ prompt. Here's the resulting page.
 
 ![commit-2](assets/commit-2.png)
 
+### commit-3
+
+Added real movie data.
+
+![commit-3](assets/commit-3.png)
+
 ## Development Build
 
 ```shell
