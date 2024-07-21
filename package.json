@@ -1,0 +1,40 @@
+{
+  "name": "movie-magic-devin-chakraui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "clean": "rimraf node_modules dist",
+    "fix": "run-s _lint:fix _format:fix",
+    "lint": "run-s _lint _format",
+    "preview": "vite preview",
+    "_format": "prettier --list-different '**/*.{css,js,jsx,ts,tsx,json,md}'",
+    "_format:fix": "npm run _format -- --write",
+    "_lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "_lint:fix": "npm run _lint -- --fix"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1"
+  },
+  "devDependencies": {
+    "@code-shaper/eslint-config": "^1.*",
+    "@dword-design/eslint-plugin-import-alias": "^5.0.0",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4"
+  }
+}
